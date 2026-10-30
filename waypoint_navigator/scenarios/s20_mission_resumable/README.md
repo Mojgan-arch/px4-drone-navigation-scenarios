@@ -4,6 +4,9 @@ Pause, resume and recover a mission, including across a node restart.
 
 **When you need it:** Long missions, battery swaps, recovering from a crash or a restart.
 
+## Demo Video
+https://github.com/user-attachments/assets/6430eb6b-c85a-417e-a9aa-b2824c6e11d9
+
 ## Run it
 
 ```bash
