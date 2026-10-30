@@ -3,6 +3,9 @@
 The arm - takeoff - navigate - land cycle on its own, with no mission on top.
 
 **When you need it:** Your first flight with any new airframe: it validates the whole control chain before you add autonomy on top.
+## Demo Video
+
+https://github.com/user-attachments/assets/f8a022e0-7bc2-4f88-b725-cd6eb3dede59
 
 ## Run it
 
