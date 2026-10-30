@@ -4,6 +4,9 @@ Plan a path, display it, and wait for an operator to confirm or reject.
 
 **When you need it:** Supervised autonomy: flying near people or expensive equipment.
 
+## Demo Video
+https://github.com/user-attachments/assets/52a2b04a-9dfa-4a7e-9bb7-2ea2f9f80756
+
 ## Run it
 
 ```bash
