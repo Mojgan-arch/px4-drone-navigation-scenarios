@@ -3,6 +3,9 @@
 Plan a path around obstacles on an occupancy grid, then follow it.
 
 **When you need it:** The obstacles are already mapped and a straight line will not work.
+## Demo Video
+
+
 
 ## Run it
 
