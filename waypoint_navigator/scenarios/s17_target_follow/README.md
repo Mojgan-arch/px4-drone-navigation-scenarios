@@ -4,6 +4,11 @@ Follow a moving target while maintaining a standoff distance.
 
 **When you need it:** Following a vehicle, a person, or livestock.
 
+
+## Demo Video
+https://github.com/user-attachments/assets/d3e19663-8101-43a1-b303-e47f4a62a3a4
+
+
 ## Run it
 
 ```bash
