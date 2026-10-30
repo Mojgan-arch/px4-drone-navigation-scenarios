@@ -4,6 +4,9 @@ Fly to a goal published on /goal_pose - in RViz, the 2D Goal Pose tool.
 
 **When you need it:** An operator picks a destination mid-flight, with no route planned in advance.
 
+## Demo Video
+https://github.com/user-attachments/assets/5c77f9d7-7a2c-4be5-9f7c-40549c306970
+
 ## Run it
 
 ```bash
