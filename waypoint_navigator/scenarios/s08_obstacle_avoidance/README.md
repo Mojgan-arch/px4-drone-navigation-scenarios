@@ -4,6 +4,10 @@ Steer around obstacles seen in the LiDAR cloud while holding a heading.
 
 **When you need it:** Flying where the map is wrong, stale, or missing entirely.
 
+## Demo Video
+
+https://github.com/user-attachments/assets/99d7ae8e-46a4-4b58-bbb6-4210d0da824d
+
 ## Run it
 
 ```bash
