@@ -4,6 +4,9 @@ Explore unknown space by flying to the nearest frontier between known-free and u
 
 **When you need it:** Entering a building, tunnel, or disaster site with no prior map.
 
+## Demo Video
+https://github.com/user-attachments/assets/52523fb8-627d-4ed1-b412-63c76e46d40d
+
 ## Run it
 
 ```bash
