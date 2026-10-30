@@ -4,6 +4,10 @@ Return to the launch point on command, or when the battery gets low.
 
 **When you need it:** Any flight far enough away that you cannot simply walk over and pick it up.
 
+## Demo Video
+
+https://github.com/user-attachments/assets/b15f7aa8-0fe8-4fb9-8b92-39e164421516
+
 ## Run it
 
 ```bash
