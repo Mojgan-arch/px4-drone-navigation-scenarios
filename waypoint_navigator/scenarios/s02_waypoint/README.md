@@ -4,6 +4,10 @@ Fly a predefined list of waypoints, then return home.
 
 **When you need it:** Survey lines, patrol circuits, repeatable test flights.
 
+## Demo Video
+https://github.com/user-attachments/assets/2be51080-975a-427e-af43-50178455549f
+
+
 ## Run it
 
 ```bash
