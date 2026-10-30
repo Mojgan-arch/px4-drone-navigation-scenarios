@@ -6,7 +6,7 @@ Return to the launch point on command, or when the battery gets low.
 
 ## Demo Video
 
-https://github.com/user-attachments/assets/b15f7aa8-0fe8-4fb9-8b92-39e164421516
+https://github.com/user-attachments/assets/5950f14a-dae6-4fda-ade1-c3f6fefc081a
 
 ## Run it
 
