@@ -4,6 +4,9 @@ Sweep a rectangular area in a boustrophedon (lawnmower) pattern.
 
 **When you need it:** Field survey, search sweep, photogrammetry, spraying.
 
+## Demo Video
+https://github.com/user-attachments/assets/42563a6b-412b-4d9f-9ba8-6721f9b057b7
+
 ## Run it
 
 ```bash
