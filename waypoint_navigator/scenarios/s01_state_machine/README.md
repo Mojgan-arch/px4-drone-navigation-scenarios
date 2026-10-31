@@ -15,7 +15,7 @@ The arm - takeoff - navigate - land cycle on its own, with no mission on top.
 5. Publish its current state on `/nav_state` throughout.
 
 ## Demo Video
-
+https://github.com/user-attachments/assets/ed8db612-a756-4027-9640-c5e461621cf8
 
 
 ## Run it
