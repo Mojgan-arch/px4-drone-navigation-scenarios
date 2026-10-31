@@ -108,8 +108,8 @@ class ObstacleAvoidanceNavigator(Node):
         )
 
         # ---- Publishers ----
-        # NOTE: must match topics the C++ offboard_control_node (px4_offboard_sim)
-        # subscribes to. See parameters "topics.cmd_vel" and "topics.arm".
+        # NOTE: these topics come from the interface profile (config/topics_*.yaml)
+        # and must match what px4_offboard_interface_node subscribes to. See parameters "topics.cmd_vel" and "topics.arm".
         self.velocity_pub = self.create_publisher(
             Twist, self.topic('cmd_vel'), 10
         )

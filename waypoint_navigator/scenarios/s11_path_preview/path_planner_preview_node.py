@@ -73,8 +73,8 @@ class PathPlannerPreview(Node):
         self.grid_max = (15.0, 15.0, 8.0)
         self.resolution = 0.5
         self.inflation = 1.0
-        # Match the state machine's default_altitude (the altitude the C++
-        # offboard node actually holds), so planned goals are reachable.
+        # Match the state machine's default_altitude (the altitude
+        # px4_offboard_interface_node actually holds), so planned goals are reachable.
         self.default_altitude = 2.5
         self.min_lidar_range = 0.5
         self.max_lidar_range = 15.0

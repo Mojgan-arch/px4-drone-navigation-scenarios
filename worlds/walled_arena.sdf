@@ -13,7 +13,7 @@
       opening    east wall (x = +5), y in [-1, +1]
       origin     centre of the arena, ground level
 
-  Written for Gazebo (gz-sim) Harmonic and PX4 SITL. See docs/simulation.md
+  Written for Gazebo (gz-sim) Harmonic and PX4 SITL. See scripts/common.sh
   for how to point PX4 at this file.
 -->
 <sdf version="1.9">

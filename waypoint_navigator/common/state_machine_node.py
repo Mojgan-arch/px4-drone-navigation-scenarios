@@ -61,7 +61,7 @@ class NavigationStateMachine(Node):
         )
 
         # ========== Parameters ==========
-        # The C++ offboard_control node holds the drone at ~2.5 m after takeoff
+        # px4_offboard_interface_node holds the drone at ~2.5 m after takeoff
         # (observed in its POSITION hold logs). Match that here so the takeoff
         # transition actually fires and navigation goals are reachable.
         self.default_altitude = 2.5
@@ -166,8 +166,8 @@ class NavigationStateMachine(Node):
         self.hover_start_time = None   # for the pre-mission stabilise delay
 
         # ========== Subscribers ==========
-        # NOTE: PX4 v1.16+ uses /fmu/out/*_v1 versioned topics, and the sim
-        # publishes LiDAR on /px4_offboard_sim/lidar/points.
+        # NOTE: PX4 v1.16+ uses /fmu/out/*_v1 versioned topics; the LiDAR topic
+        # comes from the interface profile (topics.pointcloud).
         self.create_subscription(
             VehicleLocalPosition, self.topic('local_position'),
             self.position_callback, px4_qos
@@ -193,8 +193,8 @@ class NavigationStateMachine(Node):
         )
 
         # ========== Publishers ==========
-        # NOTE: must match topics the C++ offboard_control_node (px4_offboard_sim)
-        # subscribes to — parameters "topics.cmd_vel" and "topics.arm".
+        # NOTE: these topics come from the interface profile (config/topics_*.yaml)
+        # and must match what px4_offboard_interface_node subscribes to — parameters "topics.cmd_vel" and "topics.arm".
         self.velocity_pub = self.create_publisher(
             Twist, self.topic('cmd_vel'), 10
         )
@@ -361,10 +361,10 @@ class NavigationStateMachine(Node):
         self.transition(S.TAKEOFF)
 
     def handle_takeoff(self):
-        # The C++ offboard node performs the real climb. We just wait until the
+        # px4_offboard_interface_node performs the real climb. We just wait until the
         # drone is at (or above) the target altitude, then hand over to HOVER.
         # One-sided test (>=) so we don't get stuck oscillating on the boundary
-        # when the C++ node settles right at default_altitude - tolerance.
+        # when the interface node settles right at default_altitude - tolerance.
         if self.current_z >= self.default_altitude - self.tolerance:
             self.publish_velocity(0.0, 0.0, 0.0)
             self.transition(S.HOVER)

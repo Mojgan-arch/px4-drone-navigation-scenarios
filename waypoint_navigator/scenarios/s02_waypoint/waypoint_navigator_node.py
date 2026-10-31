@@ -3,7 +3,7 @@
 Waypoint Navigator - Phase 1 (basic)
 
 Drives the drone through a hard-coded list of (x, y, z) waypoints in ENU
-metres. The C++ offboard_control_node owns the IDLE -> ARMING -> TAKEOFF ->
+metres. px4_offboard_interface_node owns the IDLE -> ARMING -> TAKEOFF ->
 HOVER sequence; this node only sends cmd_vel once HOVER altitude is reached,
 then sends arm=false at the end so the drone lands and disarms cleanly.
 
@@ -42,7 +42,7 @@ class WaypointNavigator(Node):
             depth=1,
         )
 
-        # The C++ offboard_control_node lifts the drone to this altitude
+        # px4_offboard_interface_node lifts the drone to this altitude
         # before it accepts cmd_vel. Match it here.
         self.takeoff_altitude = 2.5
         self.takeoff_threshold = self.takeoff_altitude - 0.5  # 2.0 m
@@ -76,7 +76,7 @@ class WaypointNavigator(Node):
             px4_qos,
         )
 
-        # Velocity + arm to the C++ offboard_control_node
+        # Velocity + arm to px4_offboard_interface_node
         self.velocity_pub = self.create_publisher(
             Twist, self.topic('cmd_vel'), 10
         )
@@ -103,7 +103,7 @@ class WaypointNavigator(Node):
         )
         self.get_logger().info(
             'Waiting for arm + takeoff '
-            '(publish Bool(true) to /px4_offboard_sim/offboard_control/arm).'
+            f"(publish Bool(true) to {self.topic('arm')})."
         )
 
     # -----------------------------------------------------
@@ -390,7 +390,7 @@ class WaypointNavigator(Node):
             return
 
         if self.phase == 'LAND':
-            # C++ offboard handles descent on arm=false; we just stop XY motion.
+            # The interface node handles descent on arm=false; we just stop XY motion.
             self.publish_velocity(0.0, 0.0, 0.0)
             if self.current_z < 0.3:
                 self.phase = 'DONE'

@@ -73,8 +73,8 @@ class ExplorationNode(Node):
         )
 
         # ========== Parameters ==========
-        # Match the state machine's default_altitude (the altitude the C++
-        # offboard node actually holds), so frontier goals are reachable.
+        # Match the state machine's default_altitude (the altitude
+        # px4_offboard_interface_node actually holds), so frontier goals are reachable.
         self.default_altitude = 2.5
         self.altitude = self.default_altitude
         # Bigger grid so we don't silently drop points when the PX4 local frame

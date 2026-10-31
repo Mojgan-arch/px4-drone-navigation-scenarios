@@ -53,8 +53,8 @@ class InspectionMission(Node):
         # Inspection points: (x, y, z, label)
         # Octagon (radius 2.5 m) at altitude 2.5 m around the origin. The room
         # walls are at +/-5 m, so radius 2.5 keeps the drone clear of the walls.
-        # z = 2.5 matches the state machine's default_altitude (the altitude the
-        # C++ offboard node actually holds), so points are reachable.
+        # z = 2.5 matches the state machine's default_altitude (the altitude
+        # px4_offboard_interface_node actually holds), so points are reachable.
         self.inspection_points = [
             (2.5, 0.0, 2.5, 'East Face'),
             (1.8, 1.8, 2.5, 'North-East Corner'),

@@ -71,8 +71,8 @@ class PathPlanner(Node):
         self.grid_max = ( 15.0,  15.0,  8.0)   # x_max, y_max, z_max
         self.resolution = 0.5                  # meters per cell
         self.inflation = 1.0                   # meters - safety buffer
-        # Match the state machine's default_altitude (the altitude the C++
-        # offboard node actually holds), so planned goals are reachable.
+        # Match the state machine's default_altitude (the altitude
+        # px4_offboard_interface_node actually holds), so planned goals are reachable.
         self.default_altitude = 2.5
         # Vertical dip applied to mid-path waypoints. Disabled (0.0) — every
         # dip value tried interacted with the doorway-traversal forces and

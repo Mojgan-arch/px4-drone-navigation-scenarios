@@ -66,8 +66,8 @@ class GoalNavigator(Node):
         )
 
         # ---- Publishers ----
-        # NOTE: these topics must match what offboard_control_node (C++ in
-        # px4_offboard_sim) subscribes to. See offboard_control_node.cpp
+        # NOTE: these topics come from the interface profile (config/topics_*.yaml)
+        # and must match what px4_offboard_interface_node subscribes to —
         # parameters "topics.cmd_vel" and "topics.arm".
         self.velocity_pub = self.create_publisher(
             Twist,

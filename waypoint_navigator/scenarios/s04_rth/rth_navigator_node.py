@@ -26,7 +26,7 @@ class State:
     NORMAL = 'NORMAL'              # goal-from-RViz mode
     RTH = 'RTH'                    # returning home
     HOVER_HOME = 'HOVER_HOME'      # arrived home, brief hover before landing
-    LANDING = 'LANDING'            # arm=false sent; C++ node handles AUTO_LAND
+    LANDING = 'LANDING'            # arm=false sent; interface node lands
 
 
 class RTHNavigator(Node):
@@ -110,9 +110,9 @@ class RTHNavigator(Node):
         )
 
         # ---- Publishers ----
-        # NOTE: must match topics the C++ offboard_control_node (in package
-        # px4_offboard_sim) subscribes to. See parameters "topics.cmd_vel" and
-        # "topics.arm" in offboard_control_node.cpp.
+        # NOTE: these topics come from the interface profile (config/topics_*.yaml)
+        # and must match what px4_offboard_interface_node subscribes to —
+        # parameters "topics.cmd_vel" and "topics.arm".
         self.velocity_pub = self.create_publisher(
             Twist, self.topic('cmd_vel'), 10
         )
@@ -262,18 +262,18 @@ class RTHNavigator(Node):
             self.get_logger().warn('>>> LANDING (AUTO_LAND via offboard_control) <<<')
 
     def handle_landing(self):
-        # Publish arm=false ONCE. The C++ offboard_control_node sees this,
-        # switches PX4 to AUTO_LAND, waits for ground contact, then disarms.
+        # Publish arm=false ONCE. px4_offboard_interface_node sees this,
+        # descends, waits for ground contact, then disarms.
         if not self.land_command_sent:
             disarm_msg = Bool()
             disarm_msg.data = False
             self.arm_pub.publish(disarm_msg)
             self.land_command_sent = True
             self.get_logger().info(
-                'Sent arm=false to /px4_offboard_sim/offboard_control/arm. '
-                'PX4 will descend and disarm on touchdown.'
+                f"Sent arm=false to {self.topic('arm')}. "
+                'The drone will descend and disarm on touchdown.'
             )
-        # Stop sending velocity setpoints so PX4 auto-land takes full control.
+        # Stop sending velocity setpoints so the landing is not disturbed.
 
     # =====================================================
     # Helpers
