@@ -1,4 +1,4 @@
-# 14 — Reuse the map from last time
+# 14 — Map Save & Reload
 
 Explore, save the occupancy grid to disk, and reload it on the next run.
 

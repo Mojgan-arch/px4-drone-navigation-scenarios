@@ -1,4 +1,4 @@
-# 20 — Resume after an interruption
+# 20 — Pause & Resume Mission
 
 Pause, resume and recover a mission, including across a node restart.
 

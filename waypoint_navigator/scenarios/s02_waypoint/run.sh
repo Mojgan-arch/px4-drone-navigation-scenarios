@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Scenario 02: Fly a preplanned route
+# Scenario 02: Waypoint Following
 #
 # Fly a predefined list of waypoints, then return home.
 #

@@ -1,4 +1,4 @@
-"""Scenario 04: Bring it home when the battery runs low
+"""Scenario 04: Return to Home
 
 Return to the launch point on command, or when the battery gets low.
 

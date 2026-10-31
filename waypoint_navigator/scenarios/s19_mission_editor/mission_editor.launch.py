@@ -1,4 +1,4 @@
-"""Scenario 19: Plan the mission in the field
+"""Scenario 19: Interactive Mission Editor
 
 Build a mission by clicking points in RViz, then fly it.
 

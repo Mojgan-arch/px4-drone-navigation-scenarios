@@ -1,4 +1,4 @@
-"""Scenario 08: Avoid obstacles nobody mapped
+"""Scenario 08: Reactive Obstacle Avoidance
 
 Steer around obstacles seen in the LiDAR cloud while holding a heading.
 

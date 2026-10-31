@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Scenario 10: Plan a route around known obstacles
+# Scenario 10: Grid Path Planning
 #
 # Plan a path around obstacles on an occupancy grid, then follow it.
 #

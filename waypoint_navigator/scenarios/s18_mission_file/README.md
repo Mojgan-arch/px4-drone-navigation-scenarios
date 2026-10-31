@@ -1,4 +1,4 @@
-# 18 — Run a mission written in a file
+# 18 — Mission from YAML File
 
 Execute a mission described in a YAML file rather than in code.
 

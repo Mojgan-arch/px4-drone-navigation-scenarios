@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Scenario 15: Stop at each point and capture
+# Scenario 15: Inspection Mission
 #
 # Visit a set of inspection points, hovering at each for a capture interval.
 #

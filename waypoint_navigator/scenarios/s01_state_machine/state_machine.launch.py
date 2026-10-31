@@ -1,4 +1,4 @@
-"""Scenario 01: Take off, hover, and land safely
+"""Scenario 01: Takeoff, Hover & Land
 
 The arm - takeoff - navigate - land cycle on its own, with no mission on top.
 

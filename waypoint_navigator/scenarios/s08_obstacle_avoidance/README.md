@@ -1,4 +1,4 @@
-# 08 — Avoid obstacles nobody mapped
+# 08 — Reactive Obstacle Avoidance
 
 Steer around obstacles seen in the LiDAR cloud while holding a heading.
 

@@ -1,4 +1,4 @@
-# 17 — Track a moving subject
+# 17 — Target Following
 
 Follow a moving target while maintaining a standoff distance.
 

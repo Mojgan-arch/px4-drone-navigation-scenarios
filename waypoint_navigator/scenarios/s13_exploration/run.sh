@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Scenario 13: Map an unknown space by itself
+# Scenario 13: Frontier Exploration
 #
 # Explore unknown space by flying to the nearest frontier between known-free and unknown cells.
 #

@@ -1,4 +1,4 @@
-"""Scenario 12: Cover an entire area
+"""Scenario 12: Area Coverage Sweep
 
 Sweep a rectangular area in a boustrophedon (lawnmower) pattern.
 

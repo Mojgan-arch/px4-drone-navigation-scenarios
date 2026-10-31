@@ -20,26 +20,26 @@ Each row is a situation a drone ends up in, and the behaviour that handles it. O
 
 | # | What it does for you | When you need it | World |
 |---|---|---|---|
-| **01** | [Take off, hover, and land safely](waypoint_navigator/scenarios/s01_state_machine/) | Your first flight with any new airframe: it validates the whole control chain before you add autonomy on top | `walled_arena` |
-| **02** | [Fly a preplanned route](waypoint_navigator/scenarios/s02_waypoint/) | Survey lines, patrol circuits, repeatable test flights | `walled_arena` |
-| **03** | [Send it somewhere on the map](waypoint_navigator/scenarios/s03_goal/) | An operator picks a destination mid-flight, with no route planned in advance | `walled_arena` |
-| **04** | [Bring it home when the battery runs low](waypoint_navigator/scenarios/s04_rth/) | Any flight far enough away that you cannot simply walk over and pick it up | `walled_arena` |
-| **05** | [Keep it inside a permitted area](waypoint_navigator/scenarios/s05_geofence/) | Flying near property lines, restricted airspace, or people | `walled_arena` |
-| **06** | [See what the drone is doing](waypoint_navigator/scenarios/s06_visualization/) | Debugging a mission, or showing someone else what is happening in real time | `walled_arena` |
-| **07** | [Record the flight for later analysis](waypoint_navigator/scenarios/s07_telemetry/) | Tuning parameters, proving a flight happened, reviewing an incident | `walled_arena` |
-| **08** | [Avoid obstacles nobody mapped](waypoint_navigator/scenarios/s08_obstacle_avoidance/) | Flying where the map is wrong, stale, or missing entirely | `obstacle_course` |
-| **09** | [Get through cluttered space](waypoint_navigator/scenarios/s09_obstacle_course/) | Warehouses, forests, construction sites, urban canyons | `obstacle_course` |
-| **10** | [Plan a route around known obstacles](waypoint_navigator/scenarios/s10_path_planner/) | The obstacles are already mapped and a straight line will not work | `obstacle_course` |
-| **11** | [Let a human approve the route first](waypoint_navigator/scenarios/s11_path_preview/) | Supervised autonomy: flying near people or expensive equipment | `obstacle_course` |
-| **12** | [Cover an entire area](waypoint_navigator/scenarios/s12_coverage/) | Field survey, search sweep, photogrammetry, spraying | `walled_arena` |
-| **13** | [Map an unknown space by itself](waypoint_navigator/scenarios/s13_exploration/) | Entering a building, tunnel, or disaster site with no prior map | `obstacle_course` |
-| **14** | [Reuse the map from last time](waypoint_navigator/scenarios/s14_persistent_map/) | Repeat visits to the same site, without re-exploring it every flight | `obstacle_course` |
-| **15** | [Stop at each point and capture](waypoint_navigator/scenarios/s15_inspection/) | Structure inspection: towers, solar panels, facades, storage tanks | `walled_arena` |
-| **16** | [Pick something up and drop it off](waypoint_navigator/scenarios/s16_delivery/) | Payload transport between two known points | `walled_arena` |
-| **17** | [Track a moving subject](waypoint_navigator/scenarios/s17_target_follow/) | Following a vehicle, a person, or livestock | `walled_arena` |
-| **18** | [Run a mission written in a file](waypoint_navigator/scenarios/s18_mission_file/) | Repeatable missions you keep in version control instead of in code | `walled_arena` |
-| **19** | [Plan the mission in the field](waypoint_navigator/scenarios/s19_mission_editor/) | Deciding where to fly once you are on site, without editing files | `walled_arena` |
-| **20** | [Resume after an interruption](waypoint_navigator/scenarios/s20_mission_resumable/) | Long missions, battery swaps, recovering from a crash or a restart | `walled_arena` |
+| **01** | [Takeoff, Hover & Land](waypoint_navigator/scenarios/s01_state_machine/) | Your first flight with any new airframe: it validates the whole control chain before you add autonomy on top | `walled_arena` |
+| **02** | [Waypoint Following](waypoint_navigator/scenarios/s02_waypoint/) | Survey lines, patrol circuits, repeatable test flights | `walled_arena` |
+| **03** | [Fly to a Clicked Goal](waypoint_navigator/scenarios/s03_goal/) | An operator picks a destination mid-flight, with no route planned in advance | `walled_arena` |
+| **04** | [Return to Home](waypoint_navigator/scenarios/s04_rth/) | Any flight far enough away that you cannot simply walk over and pick it up | `walled_arena` |
+| **05** | [Geofence Enforcement](waypoint_navigator/scenarios/s05_geofence/) | Flying near property lines, restricted airspace, or people | `walled_arena` |
+| **06** | [Flight Visualization](waypoint_navigator/scenarios/s06_visualization/) | Debugging a mission, or showing someone else what is happening in real time | `walled_arena` |
+| **07** | [Telemetry Logging](waypoint_navigator/scenarios/s07_telemetry/) | Tuning parameters, proving a flight happened, reviewing an incident | `walled_arena` |
+| **08** | [Reactive Obstacle Avoidance](waypoint_navigator/scenarios/s08_obstacle_avoidance/) | Flying where the map is wrong, stale, or missing entirely | `obstacle_course` |
+| **09** | [Obstacle Course Traversal](waypoint_navigator/scenarios/s09_obstacle_course/) | Warehouses, forests, construction sites, urban canyons | `obstacle_course` |
+| **10** | [Grid Path Planning](waypoint_navigator/scenarios/s10_path_planner/) | The obstacles are already mapped and a straight line will not work | `obstacle_course` |
+| **11** | [Path Preview & Confirm](waypoint_navigator/scenarios/s11_path_preview/) | Supervised autonomy: flying near people or expensive equipment | `obstacle_course` |
+| **12** | [Area Coverage Sweep](waypoint_navigator/scenarios/s12_coverage/) | Field survey, search sweep, photogrammetry, spraying | `walled_arena` |
+| **13** | [Frontier Exploration](waypoint_navigator/scenarios/s13_exploration/) | Entering a building, tunnel, or disaster site with no prior map | `obstacle_course` |
+| **14** | [Map Save & Reload](waypoint_navigator/scenarios/s14_persistent_map/) | Repeat visits to the same site, without re-exploring it every flight | `obstacle_course` |
+| **15** | [Inspection Mission](waypoint_navigator/scenarios/s15_inspection/) | Structure inspection: towers, solar panels, facades, storage tanks | `walled_arena` |
+| **16** | [Delivery Mission](waypoint_navigator/scenarios/s16_delivery/) | Payload transport between two known points | `walled_arena` |
+| **17** | [Target Following](waypoint_navigator/scenarios/s17_target_follow/) | Following a vehicle, a person, or livestock | `walled_arena` |
+| **18** | [Mission from YAML File](waypoint_navigator/scenarios/s18_mission_file/) | Repeatable missions you keep in version control instead of in code | `walled_arena` |
+| **19** | [Interactive Mission Editor](waypoint_navigator/scenarios/s19_mission_editor/) | Deciding where to fly once you are on site, without editing files | `walled_arena` |
+| **20** | [Pause & Resume Mission](waypoint_navigator/scenarios/s20_mission_resumable/) | Long missions, battery swaps, recovering from a crash or a restart | `walled_arena` |
 
 Each link goes to a folder containing everything for that scenario.
 

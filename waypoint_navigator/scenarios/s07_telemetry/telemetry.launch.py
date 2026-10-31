@@ -1,4 +1,4 @@
-"""Scenario 07: Record the flight for later analysis
+"""Scenario 07: Telemetry Logging
 
 Record position, velocity and battery to CSV during a flight.
 

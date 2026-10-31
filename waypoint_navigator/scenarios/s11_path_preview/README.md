@@ -1,4 +1,4 @@
-# 11 — Let a human approve the route first
+# 11 — Path Preview & Confirm
 
 Plan a path, display it, and wait for an operator to confirm or reject.
 

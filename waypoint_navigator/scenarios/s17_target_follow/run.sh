@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Scenario 17: Track a moving subject
+# Scenario 17: Target Following
 #
 # Follow a moving target while maintaining a standoff distance.
 #

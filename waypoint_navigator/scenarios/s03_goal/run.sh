@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Scenario 03: Send it somewhere on the map
+# Scenario 03: Fly to a Clicked Goal
 #
 # Fly to a goal published on /goal_pose - in RViz, the 2D Goal Pose tool.
 #

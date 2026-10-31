@@ -1,4 +1,4 @@
-"""Scenario 09: Get through cluttered space
+"""Scenario 09: Obstacle Course Traversal
 
 Cross the pillar slalom from one end to the other.
 

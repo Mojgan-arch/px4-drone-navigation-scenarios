@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Scenario 06: See what the drone is doing
+# Scenario 06: Flight Visualization
 #
 # Publish RViz markers for vehicle state, geofence and flown path.
 #

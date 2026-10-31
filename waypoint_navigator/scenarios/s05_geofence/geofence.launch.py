@@ -1,4 +1,4 @@
-"""Scenario 05: Keep it inside a permitted area
+"""Scenario 05: Geofence Enforcement
 
 Enforce a boundary and react when the drone approaches or crosses it.
 

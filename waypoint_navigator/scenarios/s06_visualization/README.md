@@ -1,4 +1,4 @@
-# 06 — See what the drone is doing
+# 06 — Flight Visualization
 
 Publish RViz markers for vehicle state, geofence and flown path.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Scenario 14: Reuse the map from last time
+# Scenario 14: Map Save & Reload
 #
 # Explore, save the occupancy grid to disk, and reload it on the next run.
 #

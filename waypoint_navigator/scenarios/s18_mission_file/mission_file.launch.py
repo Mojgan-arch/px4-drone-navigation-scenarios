@@ -1,4 +1,4 @@
-"""Scenario 18: Run a mission written in a file
+"""Scenario 18: Mission from YAML File
 
 Execute a mission described in a YAML file rather than in code.
 
