@@ -9,10 +9,10 @@
     flight controller is isolated in px4_offboard_interface_node.
   </description>
   <maintainer email="YOUR_EMAIL@example.com">YOUR_NAME</maintainer>
-  <license>TODO</license>
+  <license>MIT</license>
 
-  <url type="repository">https://github.com/YOUR_USERNAME/px4-drone-navigation-scenarios</url>
-  <url type="bugtracker">https://github.com/YOUR_USERNAME/px4-drone-navigation-scenarios/issues</url>
+  <url type="repository">https://github.com/Mojgan-arch/px4-drone-navigation-scenarios</url>
+  <url type="bugtracker">https://github.com/Mojgan-arch/px4-drone-navigation-scenarios/issues</url>
 
   <depend>rclpy</depend>
   <depend>px4_msgs</depend>

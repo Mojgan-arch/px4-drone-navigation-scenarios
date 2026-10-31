@@ -34,7 +34,7 @@ uORB topics to SITL and to a real autopilot; only the transport differs.
 
 | Component | Notes |
 |---|---|
-| PX4 airframe | v1.15+ recommended, so topic names match the defaults |
+| PX4 airframe | v1.16+ recommended, so topic names match the defaults |
 | Companion computer | Anything that runs ROS 2 Jazzy. Raspberry Pi 5, Jetson Orin Nano, Intel NUC. |
 | Serial or Ethernet link | Between the companion computer and the flight controller |
 | Micro XRCE-DDS Agent | Running on the companion computer |
@@ -55,7 +55,7 @@ ros2 launch waypoint_navigator waypoint.launch.py \
 
 ### 3.1 Confirm the PX4 topic names
 
-PX4 v1.15 introduced versioned output topics. Check what yours publishes:
+PX4 v1.16 introduced versioned output topics (`_v1` suffix). Check what yours publishes:
 
 ```bash
 ros2 topic list | grep /fmu/out

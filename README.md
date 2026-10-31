@@ -49,8 +49,8 @@ Each link goes to a folder containing everything for that scenario.
 
 ```bash
 mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
-git clone https://github.com/YOUR_USERNAME/px4-drone-navigation-scenarios.git
-git clone https://github.com/PX4/px4_msgs.git
+git clone https://github.com/Mojgan-arch/px4-drone-navigation-scenarios.git
+git clone -b release/1.16 https://github.com/PX4/px4_msgs.git   # use the branch that matches your PX4
 
 cd ~/ros2_ws
 source /opt/ros/jazzy/setup.bash
@@ -71,10 +71,10 @@ ros2 topic pub -1 /nav/arm std_msgs/Bool "{data: true}"
 |---|---|
 | Ubuntu | 24.04 |
 | ROS 2 | Jazzy |
-| PX4-Autopilot | v1.15+ |
+| PX4-Autopilot | v1.16+ (versioned `_v1` topics) |
 | Gazebo | Harmonic |
 | Micro XRCE-DDS Agent | latest |
-| `px4_msgs` | matching your PX4 |
+| `px4_msgs` | same release branch as your PX4 (e.g. `release/1.16`) |
 | Terminator *or* tmux | either |
 
 ---
@@ -194,7 +194,7 @@ A new scenario is a new folder under `waypoint_navigator/scenarios/` with a node
 
 ## License
 
-_Not yet chosen. Until a license file is added, no permissions are granted._
+Released under the [MIT License](LICENSE).
 
 ## Acknowledgements
 

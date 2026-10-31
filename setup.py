@@ -50,7 +50,7 @@ setup(
         'Mission logic is platform-agnostic; all contact with the flight '
         'controller is isolated in px4_offboard_interface_node.'
     ),
-    license='TODO',
+    license='MIT',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
