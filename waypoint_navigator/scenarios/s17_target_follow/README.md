@@ -4,6 +4,16 @@ Follow a moving target while maintaining a standoff distance.
 
 **When you need it:** Following a vehicle, a person, or livestock.
 
+**Goal:** Stay with something that moves, instead of flying to fixed coordinates.
+
+**Drone tasks:**
+
+1. Read the target position from `/target_position`.
+2. Work out the offset needed to hold the configured standoff distance.
+3. Move continuously to keep that distance as the target moves.
+4. Hold position if the target stops or the feed goes stale.
+
+_`target_simulator_node` supplies a synthetic target in simulation; on hardware, publish `/target_position` from your own detector instead._
 
 ## Demo Video
 https://github.com/user-attachments/assets/d3e19663-8101-43a1-b303-e47f4a62a3a4

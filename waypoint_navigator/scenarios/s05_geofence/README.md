@@ -4,6 +4,17 @@ Enforce a boundary and react when the drone approaches or crosses it.
 
 **When you need it:** Flying near property lines, restricted airspace, or people.
 
+**Goal:** Keep the drone inside a volume you define, and react before it leaves.
+
+**Drone tasks:**
+
+1. Read the boundary — a rectangular volume — from parameters.
+2. Compare its own position against that boundary continuously.
+3. Publish status on `/geofence_status` as it nears the edge.
+4. Trigger the configured response when the boundary is crossed.
+
+_This runs on the companion computer, so it is not containment. Configure PX4's own geofence as well._
+
 ## Run it
 
 ```bash

@@ -4,6 +4,15 @@ Plan a path, display it, and wait for an operator to confirm or reject.
 
 **When you need it:** Supervised autonomy: flying near people or expensive equipment.
 
+**Goal:** Keep a human in the loop near people or expensive equipment, without making them fly manually.
+
+**Drone tasks:**
+
+1. Plan a route to the goal exactly as the path planner does.
+2. Publish the proposed route and hold position.
+3. Wait for `/confirm_path` or `/reject_path`.
+4. Fly the route on confirmation; discard and replan on rejection.
+
 ## Demo Video
 https://github.com/user-attachments/assets/52a2b04a-9dfa-4a7e-9bb7-2ea2f9f80756
 

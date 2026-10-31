@@ -3,6 +3,16 @@
 Plan a path around obstacles on an occupancy grid, then follow it.
 
 **When you need it:** The obstacles are already mapped and a straight line will not work.
+
+**Goal:** Reach a goal that no straight line can reach, by planning around the obstacles it has already seen.
+
+**Drone tasks:**
+
+1. Accumulate LiDAR returns into an occupancy grid.
+2. Mark occupied cells and inflate them by a safety margin.
+3. Search the grid for a collision-free route to the goal.
+4. Publish the route on `/planned_path` and fly it waypoint by waypoint.
+
 ## Demo Video
 https://github.com/user-attachments/assets/61e8a6d4-d084-404a-b8ae-57668604cc1c
 

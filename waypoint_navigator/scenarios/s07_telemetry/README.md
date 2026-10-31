@@ -4,6 +4,15 @@ Record position, velocity and battery to CSV during a flight.
 
 **When you need it:** Tuning parameters, proving a flight happened, reviewing an incident.
 
+**Goal:** Keep a record of the flight that you can analyse after landing.
+
+**Drone tasks:**
+
+1. Fly the normal cycle with the visualization stack running.
+2. Sample position, velocity and battery at a fixed rate.
+3. Append every sample to a CSV file.
+4. Write a summary file when the flight ends.
+
 ## Run it
 
 ```bash

@@ -4,6 +4,15 @@ Fly a predefined list of waypoints, then return home.
 
 **When you need it:** Survey lines, patrol circuits, repeatable test flights.
 
+**Goal:** Fly a route that is fully known before takeoff, with no operator in the loop.
+
+**Drone tasks:**
+
+1. Take off and climb to cruise altitude.
+2. Fly to each waypoint in the list, in order.
+3. Count a waypoint as reached once inside the tolerance radius, then take the next.
+4. Return to the launch point and land after the last one.
+
 ## Demo Video
 https://github.com/user-attachments/assets/2be51080-975a-427e-af43-50178455549f
 

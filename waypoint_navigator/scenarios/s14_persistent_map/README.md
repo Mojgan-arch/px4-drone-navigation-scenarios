@@ -4,6 +4,17 @@ Explore, save the occupancy grid to disk, and reload it on the next run.
 
 **When you need it:** Repeat visits to the same site, without re-exploring it every flight.
 
+**Goal:** Avoid re-exploring the same site on every visit.
+
+**Drone tasks:**
+
+1. Explore and build the occupancy grid as in the exploration scenario.
+2. Write the grid to disk as JSON on `/save_map`.
+3. Load a previously saved grid on `/load_map`.
+4. Carry on from the loaded grid instead of starting empty.
+
+_A reloaded grid only lines up if the map frame is repeatable between flights, which without SLAM it generally is not._
+
 ## Run it
 
 ```bash

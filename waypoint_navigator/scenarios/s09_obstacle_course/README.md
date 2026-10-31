@@ -4,6 +4,15 @@ Cross the pillar slalom from one end to the other.
 
 **When you need it:** Warehouses, forests, construction sites, urban canyons.
 
+**Goal:** Cross a cluttered space from one end to the other without a prior map.
+
+**Drone tasks:**
+
+1. Take the next goal from the course mission.
+2. Head toward it while the avoidance behaviour steers around the pillars.
+3. Advance to the following goal once the current one is reached.
+4. Repeat until it reaches the far end of the course.
+
 ## Demo Video
 
 https://github.com/user-attachments/assets/405be361-a0e8-441d-ade4-fc0801728f04

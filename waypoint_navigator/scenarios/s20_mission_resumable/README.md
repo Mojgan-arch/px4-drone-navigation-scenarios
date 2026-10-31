@@ -4,6 +4,17 @@ Pause, resume and recover a mission, including across a node restart.
 
 **When you need it:** Long missions, battery swaps, recovering from a crash or a restart.
 
+**Goal:** Survive an interruption — a battery swap, a crash, a restart — without flying the whole mission again.
+
+**Drone tasks:**
+
+1. Write progress to a JSON state file as each waypoint is reached.
+2. Stop and hold on `/mission_pause`.
+3. Carry on from the last recorded waypoint on `/mission_resume`.
+4. Reload the state file and resume after a restart.
+
+_`/mission_clear_state` discards the checkpoint and starts fresh._
+
 ## Demo Video
 https://github.com/user-attachments/assets/6430eb6b-c85a-417e-a9aa-b2824c6e11d9
 

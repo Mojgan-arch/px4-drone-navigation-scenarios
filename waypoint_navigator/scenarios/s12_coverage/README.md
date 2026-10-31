@@ -4,6 +4,17 @@ Sweep a rectangular area in a boustrophedon (lawnmower) pattern.
 
 **When you need it:** Field survey, search sweep, photogrammetry, spraying.
 
+**Goal:** Visit every part of an area, rather than a few points inside it.
+
+**Drone tasks:**
+
+1. Take the area bounds and the line spacing from parameters.
+2. Generate a back-and-forth (boustrophedon) pattern that covers it.
+3. Publish the pattern on `/coverage_pattern` so it can be checked before flight.
+4. Fly the pattern end to end, then return home.
+
+_Line spacing should follow from your sensor's ground footprint, not from the defaults here._
+
 ## Demo Video
 https://github.com/user-attachments/assets/42563a6b-412b-4d9f-9ba8-6721f9b057b7
 

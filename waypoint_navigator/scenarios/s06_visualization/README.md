@@ -4,6 +4,15 @@ Publish RViz markers for vehicle state, geofence and flown path.
 
 **When you need it:** Debugging a mission, or showing someone else what is happening in real time.
 
+**Goal:** Make the flight legible — what the drone is doing, where it has been, and where its boundary is.
+
+**Drone tasks:**
+
+1. Fly the normal state-machine cycle.
+2. Publish its pose as odometry on `/drone_odom`.
+3. Publish the flown track on `/drone_path`.
+4. Publish state, geofence and waypoint markers on `/viz_markers` for RViz.
+
 ## Run it
 
 ```bash

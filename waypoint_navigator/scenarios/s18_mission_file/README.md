@@ -4,6 +4,15 @@ Execute a mission described in a YAML file rather than in code.
 
 **When you need it:** Repeatable missions you keep in version control instead of in code.
 
+**Goal:** Change a mission without touching code or rebuilding.
+
+**Drone tasks:**
+
+1. Read the mission file at the configured path.
+2. Fly each waypoint with its own altitude, hover time and action.
+3. Fall back to the file's defaults where a waypoint omits them.
+4. Return home at the end if the file asks for it.
+
 ## Run it
 
 ```bash

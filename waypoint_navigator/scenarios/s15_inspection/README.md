@@ -4,6 +4,17 @@ Visit a set of inspection points, hovering at each for a capture interval.
 
 **When you need it:** Structure inspection: towers, solar panels, facades, storage tanks.
 
+**Goal:** Capture data at a defined set of points, rather than just passing over them.
+
+**Drone tasks:**
+
+1. Fly to each inspection point in turn.
+2. Hold position there for the configured capture interval.
+3. Record the visit in a results log.
+4. Move to the next point, and return home once the list is done.
+
+_Substitute a real camera trigger for the simulated capture._
+
 ## Run it
 
 ```bash

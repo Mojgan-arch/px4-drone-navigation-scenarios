@@ -4,6 +4,17 @@ Steer around obstacles seen in the LiDAR cloud while holding a heading.
 
 **When you need it:** Flying where the map is wrong, stale, or missing entirely.
 
+**Goal:** Keep flying safely where the map is wrong, stale or missing, using only what the sensor sees right now.
+
+**Drone tasks:**
+
+1. Subscribe to the LiDAR point cloud.
+2. Divide the cloud into angular sectors and score each by how blocked it is.
+3. Steer toward the least obstructed sector while holding its general heading.
+4. Slow or stop when nothing clears the safety radius.
+
+_Purely reactive: no map is built and no path is planned ahead, so a concave obstacle can trap it._
+
 ## Demo Video
 
 https://github.com/user-attachments/assets/99d7ae8e-46a4-4b58-bbb6-4210d0da824d

@@ -4,6 +4,15 @@ Return to the launch point on command, or when the battery gets low.
 
 **When you need it:** Any flight far enough away that you cannot simply walk over and pick it up.
 
+**Goal:** Make sure the drone comes back on its own instead of landing wherever it happens to run out of battery.
+
+**Drone tasks:**
+
+1. Record the launch point as home when it arms.
+2. Watch the battery topic while flying.
+3. On a manual `/rth_trigger`, or when charge falls below the threshold, abandon the current goal.
+4. Fly back to home, descend, and land.
+
 ## Demo Video
 
 https://github.com/user-attachments/assets/5950f14a-dae6-4fda-ade1-c3f6fefc081a

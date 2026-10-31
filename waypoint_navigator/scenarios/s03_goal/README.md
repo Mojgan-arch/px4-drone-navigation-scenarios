@@ -4,6 +4,15 @@ Fly to a goal published on /goal_pose - in RViz, the 2D Goal Pose tool.
 
 **When you need it:** An operator picks a destination mid-flight, with no route planned in advance.
 
+**Goal:** Let an operator redirect the drone mid-flight by clicking a destination, with no route prepared in advance.
+
+**Drone tasks:**
+
+1. Listen for a `PoseStamped` on `/goal_pose` — RViz's **2D Goal Pose** tool.
+2. Substitute its own cruise altitude, since RViz publishes z = 0.
+3. Fly toward the goal, correcting heading as it goes.
+4. Hold position once inside the tolerance radius, ready for the next goal.
+
 ## Demo Video
 https://github.com/user-attachments/assets/5c77f9d7-7a2c-4be5-9f7c-40549c306970
 

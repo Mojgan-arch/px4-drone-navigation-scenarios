@@ -4,6 +4,17 @@ Fly to a pick-up point, then a drop-off point, with a hold at each.
 
 **When you need it:** Payload transport between two known points.
 
+**Goal:** Move a payload between two known points, with a defined hold at each.
+
+**Drone tasks:**
+
+1. Fly to the pick-up point and hold.
+2. Fly to the drop-off point and hold.
+3. Report progress on `/mission_status`.
+4. Return home.
+
+_Payload actuation is not implemented — the drone holds position where a release would occur._
+
 ## Run it
 
 ```bash

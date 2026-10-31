@@ -4,6 +4,17 @@ Explore unknown space by flying to the nearest frontier between known-free and u
 
 **When you need it:** Entering a building, tunnel, or disaster site with no prior map.
 
+**Goal:** Build a picture of a space nobody has mapped, choosing where to go next by itself.
+
+**Drone tasks:**
+
+1. Build an occupancy grid from the LiDAR as it flies.
+2. Find frontier cells — the border between known-free and unknown space.
+3. Cluster those frontiers and pick one by distance and size.
+4. Fly there, update the grid, and repeat until no frontiers remain.
+
+_Start and stop with `/start_exploration` and `/stop_exploration`. The pose comes from PX4's EKF — this is mapping, not SLAM._
+
 ## Demo Video
 https://github.com/user-attachments/assets/52523fb8-627d-4ed1-b412-63c76e46d40d
 

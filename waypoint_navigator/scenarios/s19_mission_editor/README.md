@@ -4,6 +4,15 @@ Build a mission by clicking points in RViz, then fly it.
 
 **When you need it:** Deciding where to fly once you are on site, without editing files.
 
+**Goal:** Decide where to fly once you are on site, without editing files.
+
+**Drone tasks:**
+
+1. Collect points published by RViz's **Publish Point** tool.
+2. Show the growing mission as markers.
+3. Clear the list on `/mission_clear`.
+4. Fly the collected points in order on `/mission_start`.
+
 ## Run it
 
 ```bash

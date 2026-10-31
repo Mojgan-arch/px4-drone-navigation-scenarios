@@ -1,4 +1,4 @@
-# px4-ros2-navigation-scenarios
+# px4-drone-navigation-scenarios
 
 **Twenty autonomous flight scenarios for PX4 drones on ROS 2 — each one a self-contained folder you can read, run and lift out on its own.**
 
@@ -49,7 +49,7 @@ Each link goes to a folder containing everything for that scenario.
 
 ```bash
 mkdir -p ~/ros2_ws/src && cd ~/ros2_ws/src
-git clone https://github.com/YOUR_USERNAME/px4-ros2-navigation-scenarios.git
+git clone https://github.com/YOUR_USERNAME/px4-drone-navigation-scenarios.git
 git clone https://github.com/PX4/px4_msgs.git
 
 cd ~/ros2_ws
@@ -58,7 +58,7 @@ colcon build --packages-select px4_msgs waypoint_navigator
 source install/setup.bash
 
 # run scenario 01
-./src/px4-ros2-navigation-scenarios/waypoint_navigator/scenarios/s01_state_machine/run.sh
+./src/px4-drone-navigation-scenarios/waypoint_navigator/scenarios/s01_state_machine/run.sh
 ```
 
 Then arm it:
@@ -82,7 +82,7 @@ ros2 topic pub -1 /nav/arm std_msgs/Bool "{data: true}"
 ## How the repository is organised
 
 ```
-px4-ros2-navigation-scenarios/
+px4-drone-navigation-scenarios/
 ├── waypoint_navigator/
 │   ├── common/                     code used by more than one scenario
 │   │   ├── px4_offboard_interface_node.py   ← the only PX4-aware file

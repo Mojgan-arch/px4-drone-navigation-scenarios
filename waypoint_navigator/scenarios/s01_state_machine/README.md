@@ -3,6 +3,17 @@
 The arm - takeoff - navigate - land cycle on its own, with no mission on top.
 
 **When you need it:** Your first flight with any new airframe: it validates the whole control chain before you add autonomy on top.
+
+**Goal:** Prove the whole control chain works — companion computer, DDS link, offboard interface and autopilot — before any autonomy is layered on top.
+
+**Drone tasks:**
+
+1. Wait for an arm request on `/nav/arm`.
+2. Stream setpoints until PX4 accepts offboard mode, then arm.
+3. Climb to the configured takeoff altitude and hold.
+4. Run its waypoint cycle, return to the launch point, and land.
+5. Publish its current state on `/nav_state` throughout.
+
 ## Demo Video
 
 
