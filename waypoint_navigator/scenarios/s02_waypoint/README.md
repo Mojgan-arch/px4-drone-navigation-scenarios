@@ -64,6 +64,41 @@ ros2 launch waypoint_navigator waypoint.launch.py \
     interface_config:=/path/to/my_vehicle.yaml
 ```
 
+## Flight Verification Checklist
+
+This checklist helps users evaluate Scenario 02, which demonstrates autonomous navigation along a preplanned route in PX4 SITL and Gazebo.
+
+### Before running
+
+- [ ] Confirm that the PX4 SITL environment is available.
+- [ ] Confirm that the ROS 2 environment is sourced.
+- [ ] Review the configured route and waypoint sequence.
+- [ ] Confirm that the intended simulation world is selected.
+
+### During simulation
+
+- [ ] Observe the vehicle takeoff and initial flight behavior.
+- [ ] Check whether the drone follows the configured waypoint sequence.
+- [ ] Observe the vehicle trajectory in the simulation.
+- [ ] Monitor the ROS 2 terminal for warnings or errors.
+- [ ] Verify how the mission terminates.
+
+### After simulation
+
+Record the following observations:
+
+| Item | Observation |
+| --- | --- |
+| Route completion | To be tested |
+| Waypoint sequence | To be tested |
+| Position tracking | To be tested |
+| Mission termination | To be tested |
+| ROS 2 errors | To be tested |
+
+### Demo Video
+
+A recorded simulation demonstration can be added after verification.
+  
 ---
 
 [← all scenarios](../../../README.md)
