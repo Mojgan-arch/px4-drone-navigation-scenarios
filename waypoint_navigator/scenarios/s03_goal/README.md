@@ -63,6 +63,42 @@ ros2 launch waypoint_navigator goal.launch.py \
     interface_config:=/path/to/my_vehicle.yaml
 ```
 
+## Goal Navigation Verification Checklist
+
+This checklist helps users verify operator-selected goal navigation using the RViz 2D Goal Pose tool and the `/goal_pose` topic.
+
+### Before running
+
+- [ ] Confirm PX4 SITL and Gazebo are running.
+- [ ] Confirm that the ROS 2 environment is sourced.
+- [ ] Confirm RViz is available and configured.
+- [ ] Review the configured cruise altitude and goal tolerance.
+
+### During simulation
+
+- [ ] Select a destination using RViz's 2D Goal Pose tool.
+- [ ] Confirm that the goal is published on `/goal_pose` as `PoseStamped`.
+- [ ] Observe whether the drone navigates toward the selected destination.
+- [ ] Check that the drone uses its configured cruise altitude instead of RViz's z=0.
+- [ ] Observe heading corrections during navigation.
+- [ ] Verify that the drone holds position after reaching the goal tolerance radius.
+- [ ] Select another goal and verify that the drone responds.
+
+### Test Results
+
+| Verification Item | Observation |
+| --- | --- |
+| Goal message received | To be tested |
+| Goal navigation | To be tested |
+| Cruise altitude handling | To be tested |
+| Heading correction | To be tested |
+| Position hold at goal | To be tested |
+| Subsequent goal response | To be tested |
+
+### Demo Video
+
+The simulation demonstration is available in the Demo Video section above.
+  
 ---
 
 [← all scenarios](../../../README.md)
